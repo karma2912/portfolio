@@ -6,8 +6,8 @@ const Home = () => {
   
   return (
     <>
-    <div className="min-h-screen w-full flex md:flex-row flex-col">
-      <div className="md:h-screen h-[80rem] md:w-1/2 w-full text-white flex flex-col md:justify-around justify-around items-center 2xl:pl-60 xl:pl-40 pl-14 md:pr-20 pr-10 md:pt-24 pt-24">
+    <div className="min-h-screen w-full flex md:flex-row flex-col ">
+      <div className="md:h-screen h-[80rem] md:w-1/2 w-full text-white flex flex-col md:justify-around justify-around items-center 2xl:pl-60 xl:pl-40 pl-14 md:pr-20 pr-10 ">
         <div className="min-h-1/2">
           <div className="md:text-9xl text-8xl font-semibold">Hey, I am Yash</div>
           <div className="pt-10 text-lg font-medium">

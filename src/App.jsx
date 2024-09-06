@@ -1,11 +1,12 @@
 import { useEffect, useRef, useState } from "react";
 import "./App.css";
-import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import gsap from "gsap";
 import { Route, Routes } from "react-router-dom";
 import Services from "./components/Services/Services";
 import About from "./components/About/About";
+import Home from "./components/Home/Home";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   const cursor = useRef(null);
@@ -41,7 +42,7 @@ function App() {
                 className="min-h-screen w-full bg-black gradient-bg "
               >
                 <Navbar />
-                <Home />
+                <Home/>
               </div>
             </>
           }
@@ -70,6 +71,20 @@ function App() {
               >
                 <Navbar />
                 <About/>
+              </div>
+            </>
+          }
+        />
+        <Route
+          path="/contact"
+          element={
+            <>
+              <div
+                onMouseMove={handleMouseMove}
+                className="min-h-screen w-full bg-black gradient-bg "
+              >
+                <Navbar />
+                <Contact/>
               </div>
             </>
           }
