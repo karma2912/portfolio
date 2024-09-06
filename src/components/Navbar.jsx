@@ -34,7 +34,7 @@ const Navbar = () => {
     <div className='w-1/3 md:flex hidden justify-around items-center text-lg font-semibold'>
         <Link className='hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white' to="/">Home</Link>
         <Link className='hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white' to="/services">Services</Link>
-        <Link className='hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white'>About Me</Link>
+        <Link className='hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white' to='/about'>About Me</Link>
         <Link className='hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white'>Resume</Link>
         <Link className='hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white'>Blog</Link>
     </div>
@@ -48,7 +48,7 @@ const Navbar = () => {
    <div className='h-[30rem] flex flex-col gap-8 items-start text-2xl p-10'>
         <Link className='hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white box' to="/" onClick={handleToggle}>Home</Link>
         <Link className='hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white box' to="/services" onClick={handleToggle}>Services</Link>
-        <Link className='hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white box' onClick={handleToggle}>About Me</Link>
+        <Link className='hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white box' to='/about' onClick={handleToggle}>About Me</Link>
         <Link className='hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white box' onClick={handleToggle}>Resume</Link>
         <Link className='hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white box' onClick={handleToggle}>Blog</Link>
    </div>

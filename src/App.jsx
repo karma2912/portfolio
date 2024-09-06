@@ -4,7 +4,8 @@ import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import gsap from "gsap";
 import { Route, Routes } from "react-router-dom";
-import Services from "./components/Services";
+import Services from "./components/Services/Services";
+import About from "./components/About/About";
 
 function App() {
   const cursor = useRef(null);
@@ -55,6 +56,20 @@ function App() {
               >
                 <Navbar />
                 <Services/>
+              </div>
+            </>
+          }
+        />
+        <Route
+          path="/about"
+          element={
+            <>
+              <div
+                onMouseMove={handleMouseMove}
+                className="min-h-screen w-full bg-black gradient-bg "
+              >
+                <Navbar />
+                <About/>
               </div>
             </>
           }
