@@ -39,7 +39,7 @@ const Navbar = () => {
     <Link className='border-2 rounded-lg md:flex hidden bg-purple-400 border-purple-400 p-3 text-base font-semibold contact hover:scale-110 cursor-pointer' to="/contact">Contact me</Link>
     <div className='md:hidden flex' onClick={handleToggle}><i className="fa-solid fa-bars"></i></div>
    </div>
-   {toggle && <div className='h-[30rem] w-2/3 fixed top-10 -right-2/3 bg-white bg-opacity-85 overflow-y-hidden menu' id='menu' ref={menuRef}>
+   {toggle && <div className='h-[30rem] w-2/3 fixed top-10 -right-2/3 bg-white bg-opacity-85 overflow-y-hidden menu z-20' id='menu' ref={menuRef}>
    <div className=' h-16 w-full flex justify-end pr-6  items-center'>
      <i className="fa-solid fa-xmark text-2xl " onClick={handleToggle}></i>
    </div>
@@ -48,6 +48,7 @@ const Navbar = () => {
         <Link className='hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white box' to="/services" onClick={handleToggle}>Services</Link>
         <Link className='hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white box' to='/about' onClick={handleToggle}>About Me</Link>
         <Link className='hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white box' onClick={handleToggle}>Resume</Link>
+        <Link className='hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white box' to='/contact' onClick={handleToggle}>Contact Me</Link>
    </div>
    </div>}
    </>
