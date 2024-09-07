@@ -39,7 +39,7 @@ function App() {
             <>
               <div
                 onMouseMove={handleMouseMove}
-                className="min-h-screen w-full bg-black gradient-bg "
+                className="min-h-screen w-full bg-black text-white border-white gradient-bg "
               >
                 <Navbar />
                 <Home/>
