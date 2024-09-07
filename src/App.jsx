@@ -53,7 +53,7 @@ function App() {
             <>
               <div
                 onMouseMove={handleMouseMove}
-                className="min-h-screen w-full bg-black gradient-bg "
+                className="min-h-screen w-full bg-black gradient-bg text-white border-white"
               >
                 <Navbar />
                 <Services/>
@@ -67,7 +67,7 @@ function App() {
             <>
               <div
                 onMouseMove={handleMouseMove}
-                className="min-h-screen w-full bg-black gradient-bg "
+                className="min-h-screen w-full bg-black gradient-bg text-black border-black"
               >
                 <Navbar />
                 <About/>
@@ -81,7 +81,7 @@ function App() {
             <>
               <div
                 onMouseMove={handleMouseMove}
-                className="min-h-screen w-full bg-black gradient-bg "
+                className="min-h-screen w-full bg-black gradient-bg text-white border-white"
               >
                 <Navbar />
                 <Contact/>

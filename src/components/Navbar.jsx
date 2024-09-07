@@ -28,10 +28,10 @@ const Navbar = () => {
     },[toggle])
   return (
    <>
-   <div className='w-full h-24 bg-transparent text-white pt-4 flex md:justify-evenly justify-around items-center border-b-[1px] '>
+   <div className='w-full h-24 bg-transparent pt-4 flex md:justify-evenly justify-around items-center border-b-[1px] border-black z-50 relative top-0'>
     <div className='md:text-5xl text-3xl font-semibold'>Yash.</div>
     <div className='w-1/3 md:flex hidden justify-around items-center text-lg font-semibold'>
-        <Link className='hover:scale-125 hover:cursor-pointer hover:shadow-2xl hover:shadow-white ' to="/">Home</Link>
+        <Link className='hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white ' to="/">Home</Link>
         <Link className='hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white' to="/services">Services</Link>
         <Link className='hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white' to='/about'>About Me</Link>
         <Link className='hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white'>Resume</Link>
