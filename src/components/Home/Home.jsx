@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 import yellowHex from './yellowHexf.webp'
 import './Home.css'
 import gsap from "gsap";
@@ -16,13 +17,13 @@ const Home = () => {
             project a success
           </div>
           <div className="pt-14 flex items-center gap-9 text-lg font-medium">
-            <button className="border-2 text-base bg-purple-400 border-purple-400 p-4 rounded-xl hover:scale-110">
+            <Link className="border-2 text-base bg-purple-400 border-purple-400 p-4 rounded-xl hover:scale-110" to='/about'>
               About Me
-            </button>
+            </Link>
             <div className="flex gap-3">
-              <a className="text-base hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white">
+              <Link className="text-base hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white" to='/services'>
                 My Works <i className="fa-solid fa-greater-than"></i>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

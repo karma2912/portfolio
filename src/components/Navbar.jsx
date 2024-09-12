@@ -34,7 +34,7 @@ const Navbar = () => {
         <Link className='hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white ' to="/">Home</Link>
         <Link className='hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white' to="/services">Services</Link>
         <Link className='hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white' to='/about'>About Me</Link>
-        <Link className='hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white'>Resume</Link>
+        <Link className='hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white' to='/resume'>Resume</Link>
     </div>
     <Link className='border-2 rounded-lg md:flex hidden bg-purple-400 border-purple-400 p-3 text-base font-semibold contact hover:scale-110 cursor-pointer' to="/contact">Contact me</Link>
     <div className='md:hidden flex' onClick={handleToggle}><i className="fa-solid fa-bars"></i></div>
@@ -47,7 +47,7 @@ const Navbar = () => {
         <Link className='hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white box' to="/" onClick={handleToggle}>Home</Link>
         <Link className='hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white box' to="/services" onClick={handleToggle}>Services</Link>
         <Link className='hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white box' to='/about' onClick={handleToggle}>About Me</Link>
-        <Link className='hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white box' onClick={handleToggle}>Resume</Link>
+        <Link className='hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white box' to='/resume' onClick={handleToggle}>Resume</Link>
         <Link className='hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white box' to='/contact' onClick={handleToggle}>Contact Me</Link>
    </div>
    </div>}

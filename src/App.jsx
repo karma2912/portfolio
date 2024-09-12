@@ -7,6 +7,7 @@ import Services from "./components/Services/Services";
 import About from "./components/About/About";
 import Home from "./components/Home/Home";
 import Contact from "./components/Contact/Contact";
+import Resume from "./components/Resume/Resume";
 
 function App() {
   const cursor = useRef(null);
@@ -85,6 +86,20 @@ function App() {
               >
                 <Navbar />
                 <Contact/>
+              </div>
+            </>
+          }
+        />
+        <Route
+          path="/resume"
+          element={
+            <>
+              <div
+                onMouseMove={handleMouseMove}
+                className="min-h-screen w-full bg-black gradient-bg text-white border-white"
+              >
+                <Navbar />
+                <Resume/>
               </div>
             </>
           }
