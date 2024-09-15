@@ -9,6 +9,7 @@ import sub2 from './Screenshot (10).png'
 import test1 from './Screenshot (12).png'
 import test2 from './Screenshot (13).png'
 import result1 from './Screenshot (14).png'
+import mongo1 from './Screenshot (16).png'
 
 const QuizPhotos = () => {
   return (
@@ -47,6 +48,10 @@ const QuizPhotos = () => {
         <div className='md:h-[50rem] h-[22rem] w-full flex flex-col gap-4 items-center pt-10'>
          <p className='text-2xl '>Result Page</p> 
           <img src={result1} className='md:h-[43rem] h-[15rem] md:w-5/6 w-11/12'></img>
+        </div>
+        <div className='md:h-[50rem] h-[22rem] w-full flex flex-col gap-4 items-center pt-10'>
+         <p className='text-2xl '>DataBase Page</p> 
+          <img src={mongo1} className='md:h-[43rem] h-[15rem] md:w-5/6 w-11/12'></img>
         </div>
       </div>
     </div>
