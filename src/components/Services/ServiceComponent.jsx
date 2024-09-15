@@ -1,6 +1,7 @@
 import React from 'react'
 import QuizPhotos from './Quiz/QuizPhotos'
 import { useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 const ServiceComponent = (props) => {
     const {img ,title ,description,url} = props
   return (
@@ -11,7 +12,7 @@ const ServiceComponent = (props) => {
           <div className='font-normal text-xl pt-3 pb-3'>{description}</div>
           <div className='md:h-[4rem] h-[8rem] w-full flex md:flex-row flex-col justify-evenly items-center'>
           <a className='md:w-[15rem] w-full mt-2 font-normal text-base border rounded-2xl bg-purple-400 p-2 text-white ' href={url} target='_blank'>Try Project<i className="fa-solid fa-arrow-right p-1"></i></a>
-          <a className='md:w-[15rem] w-full mt-2 font-normal text-base border rounded-2xl bg-purple-400 p-2 text-white ' href='/QuizPhotos'>View Project<i className="fa-solid fa-arrow-right p-1"></i></a>
+          <Link className='md:w-[15rem] w-full mt-2 font-normal text-base border rounded-2xl bg-purple-400 p-2 text-white ' to='/QuizPhotos'>View Project<i className="fa-solid fa-arrow-right p-1"></i></Link>
           </div>
         </div>
       </div>
