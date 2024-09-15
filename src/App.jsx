@@ -8,6 +8,7 @@ import About from "./components/About/About";
 import Home from "./components/Home/Home";
 import Contact from "./components/Contact/Contact";
 import Resume from "./components/Resume/Resume";
+import QuizPhotos from "./components/Services/Quiz/QuizPhotos";
 
 function App() {
   const cursor = useRef(null);
@@ -100,6 +101,20 @@ function App() {
               >
                 <Navbar />
                 <Resume/>
+              </div>
+            </>
+          }
+        />
+        <Route
+          path="/QuizPhotos"
+          element={
+            <>
+              <div
+                onMouseMove={handleMouseMove}
+                className="min-h-screen w-full bg-black gradient-bg text-white border-white"
+              >
+                <QuizPhotos/>
+                
               </div>
             </>
           }
