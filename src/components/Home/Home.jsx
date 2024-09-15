@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import yellowHex from './yellowHexf.webp'
+import yellowHex from './download.png'
 import './Home.css'
 import gsap from "gsap";
 const Home = () => {
@@ -42,8 +42,8 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="md:h-screen h-[50rem] md:w-1/2 w-full text-white flex md:flex-row flex-col justify-evenly items-center pr-30 pl-30 md:pt-24 pt-10">
-      <div className=""><img src={yellowHex} className="w-[50rem]"></img></div>
+      <div className="md:h-screen min-h-[50rem] md:w-1/2 w-full text-white flex md:flex-row flex-col justify-evenly items-center pr-30 pl-30 md:pt-24 pt-10">
+      <div className="rounded-full"><img src={yellowHex} className="md:h-[50rem] md:w-[50rem]" style={{clipPath:'polygon(50% 0%,100% 25%,100% 70%,50% 100%,0% 75%, 0% 25%)'}}></img></div>
       <div className="flex md:flex-col flex-row justify-around md:h-52 h-fit text-lg md:w-fit w-full">
         <a className="fa-brands fa-github border border-black rounded-full bg-black p-3 text-center meta hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white" href="https://github.com/karma2912" target="_blank"></a>
         <a className="fa-brands fa-x-twitter border border-black rounded-full bg-black p-3 text-center twitter hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white" href="https://x.com/YashRaj45608052" target="_blank"></a>

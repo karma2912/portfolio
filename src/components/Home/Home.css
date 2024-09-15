@@ -1,8 +1,8 @@
 .gradient-bg {
-    background: linear-gradient(
-      to bottom right,
-      rgba(255, 255, 255, 0.1) 0%, /* Slight white color at the top-left */
-      rgba(255, 255, 255, 0) 50%, /* Transparent in the middle */
-      rgba(255, 255, 255, 0.1) 100% /* Slight white color at the bottom-right */
-    );
-  }
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.1) 0%, /* Slight white color at the top-left */
+    rgba(255, 255, 255, 0) 50%, /* Transparent in the middle */
+    rgba(255, 255, 255, 0.1) 100% /* Slight white color at the bottom-right */
+  );
+}

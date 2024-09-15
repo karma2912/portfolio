@@ -5,7 +5,7 @@ const Resume = () => {
   return (
     <>
     <div className='h-screen flex justify-center items-center'>
-        <img src={yr}></img>
+        <img src={yr} className='md:h-screen h-[40rem]'></img>
     </div>
     </>
   )
