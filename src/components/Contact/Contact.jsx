@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 const Contact = () => {
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  },[])
   return (
     <section className="h-screen text-gray-600 body-font relative pt-24 z-10">
     <div className="absolute inset-0 bg-gray-300">

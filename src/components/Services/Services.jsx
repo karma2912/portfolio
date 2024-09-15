@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import ServiceComponent from './ServiceComponent'
 import quizpf from './quizpf.webp'
 import news from './news.jpg'
@@ -8,6 +8,9 @@ import cranepf from './khanCraneLogo.webp'
 import yd from './yashDevelops.jpg'
 
 const Services = () => {
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  },[])
   return (
     <>
     <div className='min-h-screen w-full text-white'>

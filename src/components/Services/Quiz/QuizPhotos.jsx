@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import login from './Screenshot (15).png'
 import home1 from './Screenshot (6).png'
@@ -12,6 +12,9 @@ import result1 from './Screenshot (14).png'
 import mongo1 from './Screenshot (16).png'
 
 const QuizPhotos = () => {
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  },[])
   return (
     <>
     <div className='h-full w-full bg-black'>

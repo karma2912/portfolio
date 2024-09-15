@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import yr from './yashResume.jpg'
 
 const Resume = () => {
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  },[])
   return (
     <>
     <div className='h-screen flex justify-center items-center'>

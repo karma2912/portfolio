@@ -3,6 +3,9 @@ import au from "./aboutmejpg.png";
 import ay from './yashAbout.jpg'
 import gsap from "gsap";
 const About = () => {
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  },[])
 
   return (
     <>
