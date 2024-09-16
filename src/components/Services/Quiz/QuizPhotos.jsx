@@ -18,7 +18,7 @@ const QuizPhotos = () => {
   return (
     <>
     <div className='h-full w-full bg-black'>
-      <Link className='md:text-4xl text-3xl border-2 border-white pt-2 pb-2 pl-4 pr-4 rounded-full ml-7 top-10 sticky' to='/services'><i class="fa-solid fa-arrow-left"></i></Link>
+      <Link className='md:text-4xl text-3xl border-2 border-white pt-2 pb-2 pl-4 pr-4 rounded-full ml-7 top-10 sticky hover:text-slate-400 hover:border-slate-400 ' to='/services'><i className="fa-solid fa-arrow-left"></i></Link>
       <div className='h-full w-full flex flex-col justify-center items-center'>
         <div className='md:h-[50rem] h-[22rem] w-full flex flex-col gap-4 items-center pt-10'>
          <p className='text-2xl '>Login Page</p> 
