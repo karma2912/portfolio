@@ -10,6 +10,7 @@ import Contact from "./components/Contact/Contact";
 import Resume from "./components/Resume/Resume";
 import QuizPhotos from "./components/Services/Quiz/QuizPhotos";
 import NewsPhotos from "./components/Services/news/NewsPhotos";
+import NotesPhotos from "./components/Services/notes/NotesPhotos";
 
 function App() {
   const cursor = useRef(null);
@@ -129,6 +130,20 @@ function App() {
                 className="min-h-screen w-full bg-black gradient-bg text-white border-white"
               >
                 <NewsPhotos/>
+                
+              </div>
+            </>
+          }
+        />
+        <Route
+          path="/NotesPhotos"
+          element={
+            <>
+              <div
+                onMouseMove={handleMouseMove}
+                className="min-h-screen w-full bg-black gradient-bg text-white border-white"
+              >
+                <NotesPhotos/>
                 
               </div>
             </>
