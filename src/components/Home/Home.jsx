@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import yellowHex from './download.png'
 import './Home.css'
 import gsap from "gsap";
+import ScrollTrigger from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 const Home = () => {
   useEffect(()=>{
     window.scrollTo(0, 0);
@@ -46,15 +48,28 @@ const Home = () => {
           x:-1100 
           }
       );
-      gsap.from(
-          '.inner-info',
-          { 
-          opacity: 0,
-          duration:1.3,
-          x:-1100,
-          stagger:1.3
-          }
-      );
+      gsap.from('.inner-info', {
+        scrollTrigger: {
+          trigger: '.inner-info',
+          start: 'top 70%',
+          end: 'top 30%',
+          scrub:true
+        },
+        opacity: 0,
+        x:-1100,
+        stagger:0.5,
+        duration:1.3
+      })
+      gsap.from('.image', {
+        scrollTrigger: {
+          trigger: '.image',
+          start: 'top 70%',
+          end: 'top 30%',
+          scrub: true
+        },
+        opacity: 0,
+        duration:1.3,
+      })
   },[])
   
   return (
@@ -95,7 +110,7 @@ const Home = () => {
         </div>
       </div>
       <div className="md:h-screen min-h-[50rem] md:w-1/2 w-full text-white flex md:flex-row flex-col md:justify-evenly justify-around items-center pr-30 pl-30 md:pt-24 pt-0">
-      <div className="rounded-full"><img src={yellowHex} className="md:h-[50rem] md:w-[50rem]" style={{clipPath:'polygon(50% 0%,100% 25%,100% 70%,50% 100%,0% 75%, 0% 25%)'}}></img></div>
+      <div className="rounded-full"><img src={yellowHex} className="md:h-[50rem] md:w-[50rem] image" ></img></div>
       <div className="flex md:flex-col flex-row justify-around md:h-52 h-fit text-lg md:w-fit w-full">
         <a className="fa-brands fa-github border border-black rounded-full bg-black p-3 text-center meta hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white" href="https://github.com/karma2912" target="_blank"></a>
         <a className="fa-brands fa-x-twitter border border-black rounded-full bg-black p-3 text-center twitter hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white" href="https://x.com/YashRaj45608052" target="_blank"></a>
