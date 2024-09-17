@@ -45,7 +45,7 @@ function App() {
                 onMouseMove={handleMouseMove}
                 className="min-h-screen w-full bg-black text-white border-white gradient-bg "
               >
-                <Navbar />
+                <Navbar text="text-white"/>
                 <Home/>
               </div>
             </>
@@ -59,7 +59,7 @@ function App() {
                 onMouseMove={handleMouseMove}
                 className="min-h-screen w-full bg-black gradient-bg text-white border-white"
               >
-                <Navbar />
+                <Navbar text="text-white"/>
                 <Services/>
               </div>
             </>
@@ -73,7 +73,7 @@ function App() {
                 onMouseMove={handleMouseMove}
                 className="min-h-screen w-full bg-black gradient-bg text-black border-black"
               >
-                <Navbar />
+                <Navbar text="text-black"/>
                 <About/>
               </div>
             </>
@@ -87,7 +87,7 @@ function App() {
                 onMouseMove={handleMouseMove}
                 className="min-h-screen w-full bg-black gradient-bg text-white border-white"
               >
-                <Navbar />
+                <Navbar text="text-white"/>
                 <Contact/>
               </div>
             </>
@@ -101,7 +101,7 @@ function App() {
                 onMouseMove={handleMouseMove}
                 className="min-h-screen w-full bg-black gradient-bg text-white border-white"
               >
-                <Navbar />
+                <Navbar text="text-white"/>
                 <Resume/>
               </div>
             </>

@@ -2,7 +2,8 @@ import React, { useEffect, useRef, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import gsap from 'gsap'
 
-const Navbar = () => {
+const Navbar = (props) => {
+  const {text} = props
     const menuRef = useRef(null)
     const [toggle,setToggle] = useState(false)
     const handleToggle=()=>{
@@ -31,10 +32,10 @@ const Navbar = () => {
    <div className='w-full h-24 bg-transparent pt-4 flex md:justify-evenly justify-around items-center border-b-[1px] z-40 top-0 sticky'>
     <div className='md:text-5xl text-3xl font-semibold'>Yash.</div>
     <div className='w-1/3 md:flex hidden justify-around items-center text-lg font-semibold'>
-        <NavLink className={(e)=>{return e.isActive?"hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white text-purple-400":"hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white text-white"}} to="/">Home</NavLink>
-        <NavLink className={(e)=>{return e.isActive?"hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white text-purple-400":"hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white text-white"}} to="/services">Services</NavLink>
-        <NavLink className={(e)=>{return e.isActive?"hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white text-purple-400":"hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white text-white"}} to='/about'>About Me</NavLink>
-        <NavLink className={(e)=>{return e.isActive?"hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white text-purple-400":"hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white text-white"}} to='/resume'>Resume</NavLink>
+        <NavLink className={(e)=>{return e.isActive?"hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white text-purple-400":`hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white ${text}`}} to="/">Home</NavLink>
+        <NavLink className={(e)=>{return e.isActive?"hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white text-purple-400":`hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white ${text}`}} to="/services">Services</NavLink>
+        <NavLink className={(e)=>{return e.isActive?"hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white text-purple-400":`hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white ${text}`}} to='/about'>About Me</NavLink>
+        <NavLink className={(e)=>{return e.isActive?"hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white text-purple-400":`hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white ${text}`}} to='/resume'>Resume</NavLink>
     </div>
     <NavLink className='border-2 rounded-lg md:flex hidden bg-purple-400 border-purple-400 p-3 text-base font-semibold contact hover:scale-110 cursor-pointer' to="/contact">Contact me</NavLink>
     <div className='md:hidden flex' onClick={handleToggle}><i className="fa-solid fa-bars"></i></div>
@@ -48,7 +49,7 @@ const Navbar = () => {
         <NavLink className={(e)=>{return e.isActive?"hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white text-purple-400":"hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white text-black"}} to="/services" onClick={handleToggle}>Services</NavLink>
         <NavLink className={(e)=>{return e.isActive?"hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white text-purple-400":"hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white text-black"}} to='/about' onClick={handleToggle}>About Me</NavLink>
         <NavLink className={(e)=>{return e.isActive?"hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white text-purple-400":"hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white text-black"}} to='/resume' onClick={handleToggle}>Resume</NavLink>
-        <NavLink className={(e)=>{return e.isActive?"hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white text-purple-400":"hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white text-black"}} to='/contact' onClick={handleToggle}>Contact Me</NavLink>
+        <NavLink  className={(e)=>{return e.isActive?"hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white text-purple-400":"hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white text-black"}} to='/contact' onClick={handleToggle}>Contact Me</NavLink>
    </div>
    </div>}
    </>
