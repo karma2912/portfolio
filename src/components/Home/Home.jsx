@@ -53,8 +53,7 @@ const Home = () => {
           trigger: '.inner-info',
           start: window.innerWidth < 768 ? "top 70%" : "top 88%",
           end: window.innerWidth < 768 ?'top 30%': 'top 80%',
-          scrub:true,
-          markers:true
+          scrub:true
         },
         opacity: 0,
         x:-1100,
