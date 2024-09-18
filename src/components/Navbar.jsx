@@ -20,16 +20,11 @@ const Navbar = (props) => {
         duration:0.5,
         stagger:0.3
       })
-      gsap.from(".box",{
-        x:100,
-        duration:0.4,
-        stagger:0.1
-      })
       }
     },[toggle])
   return (
    <>
-   <div className='w-full h-24 bg-transparent pt-4 flex md:justify-evenly justify-around items-center border-b-[1px] z-40 top-0 sticky'>
+   <div className='w-full h-24 bg-transparent backdrop-blur-sm pt-4 flex md:justify-evenly justify-around items-center border-b-[1px] z-40 top-0 sticky'>
     <div className='md:text-5xl text-3xl font-semibold'>Yash.</div>
     <div className='w-1/3 md:flex hidden justify-around items-center text-lg font-semibold'>
         <NavLink className={(e)=>{return e.isActive?"hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white text-purple-400":`hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white ${text}`}} to="/">Home</NavLink>

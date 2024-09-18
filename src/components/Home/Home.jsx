@@ -51,14 +51,15 @@ const Home = () => {
       gsap.from('.inner-info', {
         scrollTrigger: {
           trigger: '.inner-info',
-          start: 'top 70%',
-          end: 'top 30%',
-          scrub:true
+          start: window.innerWidth < 768 ? "top 70%" : "top 88%",
+          end: window.innerWidth < 768 ?'top 30%': 'top 80%',
+          scrub:true,
+          markers:true
         },
         opacity: 0,
         x:-1100,
-        stagger:0.5,
-        duration:1.3
+        stagger:1,
+        duration:1
       })
       gsap.from('.image', {
         scrollTrigger: {
@@ -68,7 +69,7 @@ const Home = () => {
           scrub: true
         },
         opacity: 0,
-        duration:1.3,
+        duration:3,
       })
   },[])
   
