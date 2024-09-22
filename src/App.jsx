@@ -11,6 +11,7 @@ import Resume from "./components/Resume/Resume";
 import QuizPhotos from "./components/Services/Quiz/QuizPhotos";
 import NewsPhotos from "./components/Services/news/NewsPhotos";
 import NotesPhotos from "./components/Services/notes/NotesPhotos";
+import NewContact from "./components/Contact/newContact";
 
 function App() {
   const cursor = useRef(null);
