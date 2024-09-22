@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import yellowHex from './download.png'
+import yellowHex from './yashPfp.webp'
 import './Home.css'
 import gsap from "gsap";
 import ScrollTrigger from 'gsap/ScrollTrigger';
@@ -60,6 +60,16 @@ const Home = () => {
         stagger:3,
         duration:2
       })
+      gsap.from('.image-inner', {
+        scrollTrigger: {
+          trigger: '.image-inner',
+          start: window.innerWidth < 768 ? "top 70%" : "top 88%",
+          end: window.innerWidth < 768 ?'top 45%': 'top 80%',
+          scrub:true
+        },
+        x:-1100,
+        duration:2
+      })
 
   },[])
   
@@ -100,8 +110,9 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="md:h-screen min-h-[30rem] md:w-1/2 w-full text-white flex md:flex-row flex-col md:justify-evenly justify-around items-center pr-30 pl-30 md:pt-24 pt-0">
-      <div className="rounded-full"><img src={yellowHex} className="md:h-[50rem] md:w-[50rem] image" ></img></div>
+      <div className="md:h-screen min-h-[35rem] md:w-1/2 w-full text-white flex md:flex-row flex-col md:justify-evenly justify-center items-center pr-30 pl-30 md:pb-16 pt-0">
+      <div className="md:h-[35rem] md:w-[38rem] image flex justify-center items-start" style={{clipPath: 'polygon(25% 0%, 75% 0%, 100% 50%, 71% 82%, 26% 82%, 0% 50%)',backgroundColor: "rgba(167, 139, 202, 1)",border:'1px',borderColor:"purple",
+      }}><img src={yellowHex} className="md:h-[30rem] md:w-[30rem] image-inner"></img></div>
       <div className="flex md:flex-col flex-row justify-around md:h-52 h-fit text-lg md:w-fit w-full">
         <a className="fa-brands fa-github border border-black rounded-full bg-black p-3 text-center meta hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white" href="https://github.com/karma2912" target="_blank"></a>
         <a className="fa-brands fa-x-twitter border border-black rounded-full bg-black p-3 text-center twitter hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white" href="https://x.com/YashRaj45608052" target="_blank"></a>
