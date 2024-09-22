@@ -60,16 +60,7 @@ const Home = () => {
         stagger:3,
         duration:2
       })
-      gsap.from('.image', {
-        scrollTrigger: {
-          trigger: '.image',
-          start: 'top 70%',
-          end: 'top 30%',
-          scrub: true
-        },
-        opacity: 0,
-        duration:3,
-      })
+
   },[])
   
   return (
