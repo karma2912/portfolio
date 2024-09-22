@@ -6,13 +6,13 @@ const ServiceComponent = (props) => {
     const {img ,title ,description,url,to} = props
   return (
     <>
-    <div className = "component text-white m-5 p-4  flex flex-col sm:flex-row items-center  border-2 border-purple-400 rounded-3xl hover:transition duration-300 hover:border-4 hover:shadow-2xl hover:border-purple-400"> 
-        <img className='w-80 rounded-3xl flex' src={img}></img>
-        <div className='h-full w-full font-bold md:p-3 p-1 text-2xl flex flex-col md:gap-6 gap-0 items-center text-center'>{title}
-          <div className='font-normal text-xl pt-3 pb-3'>{description}</div>
-          <div className='md:h-[4rem] h-[6rem] w-full flex md:flex-row flex-col justify-evenly items-center'>
-          {url && <a className='md:w-[15rem] w-full mt-2 font-normal text-base hover:text-lg border rounded-2xl border-purple-400 hover:border-purple-500 bg-purple-400 hover:bg-purple-500 p-2 hover:p-3 text-white ' href={url} target='_blank'>Try Project<i className="fa-solid fa-arrow-right p-1"></i></a>}
-         {!url && <Link className='md:w-[15rem] w-full mt-2 font-normal text-base hover:text-lg border rounded-2xl border-purple-400 hover:border-purple-500 bg-purple-400 hover:bg-purple-500 p-2 hover:p-3 text-white ' to={`${to}`}>View Project<i className="fa-solid fa-arrow-right p-1"></i></Link>}
+    <div className = "component text-white md:m-5 m-2 p-4  flex flex-col sm:flex-row items-center border-2 border-purple-400 md:rounded-3xl rounded-xl hover:transition duration-300 hover:border-4 hover:shadow-2xl hover:border-purple-400"> 
+        <img className='md:w-80 h-70 md:rounded-3xl w-full rounded-xl flex' src={img}></img>
+        <div className='h-full w-full font-bold md:p-3 p-1 md:text-2xl text-lg flex flex-col md:gap-6 gap-0 items-center md:text-center text-purple-400'>{title}
+          <div className='font-normal md:text-xl text-base pt-3 pb-3 text-white'>{description}</div>
+          <div className='h-[4rem] w-full flex md:flex-row flex-col justify-evenly items-center'>
+          {url && <a className='md:w-[15rem] w-full mt-2 font-normal text-base hover:text-lg text-center border rounded-2xl border-purple-400 hover:border-purple-500 bg-purple-400 hover:bg-purple-500 p-2 hover:p-3 text-white ' href={url} target='_blank'>Try Project<i className="fa-solid fa-arrow-right p-1"></i></a>}
+         {!url && <Link className='md:w-[15rem] w-full mt-2 font-normal text-base hover:text-lg text-center border rounded-2xl border-purple-400 hover:border-purple-500 bg-purple-400 hover:bg-purple-500 p-2 hover:p-3 text-white ' to={`${to}`}>View Project<i className="fa-solid fa-arrow-right p-1"></i></Link>}
           </div>
         </div>
       </div>

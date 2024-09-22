@@ -109,7 +109,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="md:h-screen min-h-[50rem] md:w-1/2 w-full text-white flex md:flex-row flex-col md:justify-evenly justify-around items-center pr-30 pl-30 md:pt-24 pt-0">
+      <div className="md:h-screen min-h-[30rem] md:w-1/2 w-full text-white flex md:flex-row flex-col md:justify-evenly justify-around items-center pr-30 pl-30 md:pt-24 pt-0">
       <div className="rounded-full"><img src={yellowHex} className="md:h-[50rem] md:w-[50rem] image" ></img></div>
       <div className="flex md:flex-col flex-row justify-around md:h-52 h-fit text-lg md:w-fit w-full">
         <a className="fa-brands fa-github border border-black rounded-full bg-black p-3 text-center meta hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white" href="https://github.com/karma2912" target="_blank"></a>
