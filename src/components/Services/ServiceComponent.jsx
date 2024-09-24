@@ -11,8 +11,8 @@ const ServiceComponent = (props) => {
         <div className='h-full w-full font-bold md:p-3 p-1 md:text-2xl text-lg flex flex-col md:gap-6 gap-0 items-center md:text-center text-purple-400'>{title}
           <div className='font-normal md:text-xl text-base pt-3 pb-3 text-white'>{description}</div>
           <div className='h-[4rem] w-full flex md:flex-row flex-col justify-evenly items-center'>
-          {url && <a className='md:w-[15rem] w-full mt-2 font-normal text-base hover:text-lg text-center border rounded-2xl border-purple-400 hover:border-purple-500 bg-purple-400 hover:bg-purple-500 p-2 hover:p-3 text-white ' href={url} target='_blank'>Try Project<i className="fa-solid fa-arrow-right p-1"></i></a>}
-         {!url && <Link className='md:w-[15rem] w-full mt-2 font-normal text-base hover:text-lg text-center border rounded-2xl border-purple-400 hover:border-purple-500 bg-purple-400 hover:bg-purple-500 p-2 hover:p-3 text-white ' to={`${to}`}>View Project<i className="fa-solid fa-arrow-right p-1"></i></Link>}
+          {url && <a className='md:w-[15rem] w-full mt-2 font-normal text-base text-center border rounded-2xl border-purple-400 hover:border-purple-500 bg-purple-400 hover:bg-purple-500 p-2 text-white ' href={url} target='_blank'>Try Project<i className="fa-solid fa-arrow-right p-1"></i></a>}
+         {!url && <Link className='md:w-[15rem] w-full mt-2 font-normal text-base text-center border rounded-2xl border-purple-400 hover:border-purple-500 bg-purple-400 hover:bg-purple-500 p-2 text-white ' to={`${to}`}>View Project<i className="fa-solid fa-arrow-right p-1"></i></Link>}
           </div>
         </div>
       </div>

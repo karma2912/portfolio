@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import au from "./aboutmejpg.png";
-import ay from './yashpfp (1).jpg'
+import ay from './yashAbout.jpg'
 import gsap from "gsap";
 const About = () => {
   useEffect(()=>{

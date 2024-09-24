@@ -48,6 +48,13 @@ const Home = () => {
           x:-1100 
           }
       );
+      gsap.from(
+          '.image-inner',
+          { 
+          duration:1.3,
+          y:600 
+          }
+      );
       gsap.from('.inner-info', {
         scrollTrigger: {
           trigger: '.inner-info',
@@ -70,7 +77,7 @@ const Home = () => {
         <div className="min-h-1/2">
           <div className="md:text-9xl text-8xl font-semibold yash">Hey, I am Yash</div>
           <div className="pt-10 text-lg font-medium yash-inner">
-            I am Web developer & I am very passionate and dedicated to my work,
+            I am a Web developer & I am very passionate and dedicated to my work,
             I have acquired the skills and knowledge necessary to make your
             project a success
           </div>
