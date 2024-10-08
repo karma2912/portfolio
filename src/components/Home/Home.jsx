@@ -58,12 +58,12 @@ const Home = () => {
       gsap.from('.inner-info', {
         scrollTrigger: {
           trigger: '.inner-info',
-          start: window.innerWidth < 768 ? "top 70%" : "top 88%",
-          end: window.innerWidth < 768 ?'top 0%': 'top 80%',
+          start: window.innerWidth < 768 ? "top 70%" : "top 0",
+          end: window.innerWidth < 768 ?'top 0%': 'top 0%',
           scrub:true
         },
-        opacity: 0,
-        x:-1100,
+        opacity: window.innerWidth<768 ? 0: 1,
+        x:window.innerWidth<768 ? -1100: 0,
         stagger:3,
         duration:2
       })
@@ -82,11 +82,11 @@ const Home = () => {
             project a success
           </div>
           <div className="pt-14 flex items-center gap-9 text-lg font-medium">
-            <Link className="border-2 text-base bg-purple-400 border-purple-400 p-4 rounded-xl hover:scale-110 about" to='/about'>
-              About Me
+            <Link className="border-2 text-base md:h-12 md:w-32 bg-purple-400 border-purple-400 p-4 rounded-xl hover:scale-110 about flex justify-center items-center" to='/about'>
+            <div className="hover:text-lg">About Me</div>
             </Link>
             <div className="flex gap-3">
-              <Link className="text-base hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white work" to='/services'>
+              <Link className="text-base hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white hover:text-lg work" to='/services'>
                 My Works <i className="fa-solid fa-greater-than"></i>
               </Link>
             </div>
