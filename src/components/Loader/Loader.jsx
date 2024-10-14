@@ -68,7 +68,7 @@ const Loader = () => {
   return (
     <>
       <div ref={cursor} className="flex justify-center items-center h-full w-full ">
-        <div className="overflow-hidden absolute h-20 md:w-[40rem] w-[24rem]">
+        <div className="overflow-hidden absolute h-20 md:w-[40rem] w-[23rem]">
           <div className="md:text-[3rem] text-[1.7rem] font-light child flex justify-between items-center w-full">
             <span className="stag-child">Pioneering</span>
             <span className="font-semibold stag-child">Creative</span>
