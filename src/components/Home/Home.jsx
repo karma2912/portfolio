@@ -55,7 +55,6 @@ const Home = () => {
           y:600 
           }
       );
-     
 
   },[])
   
@@ -64,7 +63,7 @@ const Home = () => {
     <div className="min-h-screen w-full flex md:flex-row flex-col bg-black text-white">
       <div className="md:h-screen h-[80rem] md:w-1/2 w-full text-white flex flex-col justify-evenly items-center 2xl:pl-60 xl:pl-40 pl-10 md:pr-20 pr-10 ">
         <div className="min-h-1/2">
-          <div className="md:text-[7rem] text-8xl font-semibold yash ml-20">Hey,  <span className="font-thin">I am</span> Yash</div>
+          <div className="md:text-[7rem] text-8xl font-semibold yash md:ml-20 ml-28">Hey,  <span className="font-thin">I am</span> Yash</div>
           <div className="pt-10 text-lg font-medium yash-inner text-gray-500">
             I am a Web developer & I am very passionate and dedicated to my work,
             I have acquired the skills and knowledge necessary to make your
