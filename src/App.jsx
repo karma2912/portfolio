@@ -11,18 +11,17 @@ import Resume from "./components/Resume/Resume";
 import QuizPhotos from "./components/Services/Quiz/QuizPhotos";
 import NewsPhotos from "./components/Services/news/NewsPhotos";
 import NotesPhotos from "./components/Services/notes/NotesPhotos";
+import Loader from "./components/Loader/Loader";
 
 function App() {
   const cursor = useRef(null);
   const [position, setPosition] = useState({ x: 0, y: 0 });
-
   const handleMouseMove = (event) => {
     setPosition({
       x: event.clientX,
       y: event.clientY,
     });
   };
-
   useEffect(() => {
     gsap.to(cursor.current, {
       x: position.x,
@@ -41,14 +40,10 @@ function App() {
           path="/"
           element={
             <>
-              <div
-                onMouseMove={handleMouseMove}
-                className="min-h-screen w-full bg-black text-white border-white gradient-bg "
-              >
-                <Navbar text="text-white"/>
-                <Home/>
-              </div>
-            </>
+            <div className="h-screen w-full bg-black text-white flex justify-center items-center" onMouseMove={handleMouseMove} >
+              <Loader/>
+            </div>
+           </>
           }
         />
         <Route

@@ -55,28 +55,17 @@ const Home = () => {
           y:600 
           }
       );
-      gsap.from('.inner-info', {
-        scrollTrigger: {
-          trigger: '.inner-info',
-          start: window.innerWidth < 768 ? "top 70%" : "top 0",
-          end: window.innerWidth < 768 ?'top 0%': 'top 0%',
-          scrub:true
-        },
-        opacity: window.innerWidth<768 ? 0: 1,
-        x:window.innerWidth<768 ? -1100: 0,
-        stagger:3,
-        duration:2
-      })
+     
 
   },[])
   
   return (
     <>
-    <div className="min-h-screen w-full flex md:flex-row flex-col ">
+    <div className="min-h-screen w-full flex md:flex-row flex-col bg-black text-white">
       <div className="md:h-screen h-[80rem] md:w-1/2 w-full text-white flex flex-col justify-evenly items-center 2xl:pl-60 xl:pl-40 pl-10 md:pr-20 pr-10 ">
         <div className="min-h-1/2">
-          <div className="md:text-9xl text-8xl font-semibold yash">Hey, I am Yash</div>
-          <div className="pt-10 text-lg font-medium yash-inner">
+          <div className="md:text-[7rem] text-8xl font-semibold yash ml-20">Hey,  <span className="font-thin">I am</span> Yash</div>
+          <div className="pt-10 text-lg font-medium yash-inner text-gray-500">
             I am a Web developer & I am very passionate and dedicated to my work,
             I have acquired the skills and knowledge necessary to make your
             project a success
@@ -92,7 +81,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="md:h-fit flex lg:flex-row flex-col w-full justify-between h-[20rem] info">
+        <div className="md:h-fit flex lg:flex-row flex-col w-full justify-between h-[20rem] info ">
           <div className="inner-info">
             <div className="md:text-lg text-xl">Born in</div>
             <div className="md:text-2xl text-5xl font-semibold">Mumbai</div>
