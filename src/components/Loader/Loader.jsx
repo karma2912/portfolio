@@ -68,7 +68,7 @@ const Loader = () => {
   return (
     <>
       <div ref={cursor} className="flex justify-center items-center h-full w-full ">
-        <div className="overflow-hidden absolute h-20 md:w-[40rem] w-[22rem]">
+        <div className="overflow-hidden absolute h-20 md:w-[40rem] w-[24rem]">
           <div className="md:text-[3rem] text-[1.7rem] font-light child flex justify-between items-center w-full">
             <span className="stag-child">Pioneering</span>
             <span className="font-semibold stag-child">Creative</span>
@@ -78,7 +78,7 @@ const Loader = () => {
         <div className="h-16 w-0 bg-purple-400 block opacity-0 absolute"><div className="text-[3rem] relative opacity-0 yash font-normal">Yash.com</div></div>
        </div>
        <div className="h-0 w-full bg-purple-400 absolute bottom-0 purple"></div>
-       <div className="h-0 home absolute bottom-0 bg-black overflow-scroll">
+       <div className="h-0 home absolute bottom-0 bg-black md:overflow-y-hidden overflow-x-hidden overflow-scroll">
         <Navbar/>
         <Home/>
        </div>
