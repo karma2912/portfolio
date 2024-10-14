@@ -27,11 +27,17 @@ const Loader = () => {
       duration: 2,
       y: 300
     });
+       tl.from('.stag-child', {
+      duration: 1,
+      y: 300,
+      stagger: 0.5,
+  });
     tl.to(".child",{
         duration:2,
         delay:0.5,
         y:-300
     })
+ 
     tl.to(".block",{
         opacity:1,
         delay:-1,
@@ -64,12 +70,13 @@ const Loader = () => {
     delay:-0.6,
     duration:1
    })
+
   }, []);
   return (
     <>
       <div ref={cursor} className="flex justify-center items-center h-full w-full ">
-        <div className="overflow-hidden absolute h-20 md:w-[40rem] w-[23rem]">
-          <div className="md:text-[3rem] text-[1.7rem] font-light child flex justify-between items-center w-full">
+        <div className="overflow-hidden absolute h-20 md:w-[40rem] w-full">
+          <div className="md:text-[3rem] text-[1.7rem] font-light child flex justify-evenly items-center w-full">
             <span className="stag-child">Pioneering</span>
             <span className="font-semibold stag-child">Creative</span>
             <span className="stag-child">Excellence</span>
