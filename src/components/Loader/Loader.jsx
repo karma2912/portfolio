@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import Home from "../Home/Home";
 import Navbar from "../Navbar";
+import Works from "../Home/Works";
 
 const Loader = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -91,9 +92,10 @@ const Loader = () => {
         </div>
       </div>
       <div className="h-0 w-full bg-purple-400 absolute bottom-0 purple"></div>
-      <div className="h-0 home absolute bottom-0 bg-black md:overflow-y-hidden overflow-x-hidden overflow-scroll gradient-bg">
+      <div className="h-0 home absolute bottom-0 bg-black  overflow-x-hidden overflow-scroll gradient-bg">
         <Navbar />
         <Home />
+        <Works/>
       </div>
     </>
   );

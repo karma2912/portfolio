@@ -60,10 +60,10 @@ const Home = () => {
   
   return (
     <>
-    <div className="min-h-screen w-full flex md:flex-row flex-col bg-black text-white bg-cover gradient-bg" style={{ backgroundImage: "url('https://s.tmimgcdn.com/scr/800x500/361700/black-minimal-aesthetic-grid-line-pattern-background_361709-original.jpg')" }}>
+    <div className="min-h-screen w-full flex md:flex-row flex-col bg-black text-white bg-cover" style={{ backgroundImage: "url('https://s.tmimgcdn.com/scr/800x500/361700/black-minimal-aesthetic-grid-line-pattern-background_361709-original.jpg')" }}>
       <div className="md:h-screen h-[80rem] md:w-1/2 w-full text-white flex flex-col justify-evenly items-center 2xl:pl-60 xl:pl-40 pl-10 md:pr-20 pr-10 ">
         <div className="min-h-1/2 text-start ">
-        <div className="md:text-[6.8rem] text-8xl font-semibold">Hey,<span className="font-thin"> I
+        <div className="md:text-[6.7vw] text-8xl font-semibold">Hey,<span className="font-thin"> I
           
            am</span> Yash</div>
           <div className="pt-10 text-lg font-medium yash-inner text-gray-500">
@@ -82,23 +82,23 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="md:h-fit flex lg:flex-row flex-col w-full justify-between h-[20rem] info ">
+        <div className="md:h-fit flex md:flex-row flex-col w-full justify-between h-[20rem] info ">
           <div className="inner-info">
             <div className="md:text-lg text-xl">Born in</div>
-            <div className="md:text-2xl text-5xl font-semibold">Mumbai</div>
+            <div className="md:text-[1.7vw] text-5xl font-semibold">Mumbai</div>
           </div>
           <div className="inner-info">
             <div className="text-lg">Experience</div>
-            <div className="md:text-2xl text-5xl font-semibold">1+ Years</div>
+            <div className="md:text-[1.7vw] text-5xl font-semibold">1+ Years</div>
           </div>
           <div className="inner-info">
             <div className="text-lg">Date of birth</div>
-            <div className="md:text-2xl text-5xl font-semibold">29 Dec 2006</div>
+            <div className="md:text-[1.7vw] text-5xl font-semibold">29 Dec 2006</div>
           </div>
         </div>
       </div>
       <div className="md:h-screen min-h-[35rem] md:w-1/2 w-full text-white flex md:flex-row flex-col md:justify-evenly justify-center items-center pr-30 pl-30 md:pb-16 pt-0">
-      <div className="md:h-[35rem] md:w-[38rem] image flex justify-center items-start" style={{clipPath: 'polygon(25% 0%, 75% 0%, 100% 50%, 71% 82%, 26% 82%, 0% 50%)',backgroundColor: "rgba(167, 139, 202, 1)",border:'1px',borderColor:"purple",
+      <div className="md:h-[35rem] md:w-[35vw] image flex justify-center items-start" style={{clipPath: 'polygon(25% 0%, 75% 0%, 100% 50%, 71% 82%, 26% 82%, 0% 50%)',backgroundColor: "rgba(167, 139, 202, 1)",border:'1px',borderColor:"purple",
       }}><img src={yellowHex} className="md:h-[30rem] md:w-[30rem] image-inner"></img></div>
       <div className="flex md:flex-col flex-row justify-around md:h-52 h-fit text-lg md:w-fit w-full">
         <a className="fa-brands fa-github border border-black rounded-full bg-black p-3 text-center meta hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white" href="https://github.com/karma2912" target="_blank"></a>
