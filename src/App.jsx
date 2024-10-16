@@ -31,10 +31,7 @@ function App() {
   }, [position]);
   return (
     <>
-      <div
-        ref={cursor}
-        className="h-4 w-4 bg-white rounded-full fixed Yash"
-      ></div>
+    
       <Routes>
         <Route
           path="/"
