@@ -37,7 +37,7 @@ function App() {
           path="/"
           element={
             <>
-            <div className="h-screen w-full bg-black text-white flex justify-center items-center" onMouseMove={handleMouseMove} >
+            <div className="h-screen w-full bg-black text-white gradient-bg flex justify-center items-center" onMouseMove={handleMouseMove} >
               <Loader/>
             </div>
            </>

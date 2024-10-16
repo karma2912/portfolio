@@ -91,7 +91,7 @@ const Loader = () => {
         </div>
       </div>
       <div className="h-0 w-full bg-purple-400 absolute bottom-0 purple"></div>
-      <div className="h-0 home absolute bottom-0 bg-black md:overflow-y-hidden overflow-x-hidden overflow-scroll">
+      <div className="h-0 home absolute bottom-0 bg-black md:overflow-y-hidden overflow-x-hidden overflow-scroll gradient-bg">
         <Navbar />
         <Home />
       </div>
