@@ -4,6 +4,7 @@ import gsap from "gsap";
 import Home from "../Home/Home";
 import Navbar from "../Navbar";
 import Works from "../Home/Works";
+import AboutHome from "../Home/AboutHome";
 
 const Loader = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -71,6 +72,11 @@ const Loader = () => {
       delay: -0.6,
       duration: 1,
     });
+    tl.to(".yashs",{
+      opacity:1,
+      duration:2,
+      delay:6
+    })
   }, []);
   return (
     <>

@@ -23,12 +23,8 @@ function App() {
     });
   };
   useEffect(() => {
-    gsap.to(cursor.current, {
-      x: position.x,
-      y: position.y,
-      ease: "back.out(1.7)",
-    });
-  }, [position]);
+  
+  }, []);
   return (
     <>
     

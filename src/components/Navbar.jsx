@@ -9,19 +9,7 @@ const Navbar = (props) => {
     const handleToggle=()=>{
       setToggle(!toggle)
     }  
-    useEffect(()=>{
-      if(menuRef.current === null){
-        console.log("Errorr")
-      }
-      else{
-      console.log(menuRef.current)
-      gsap.to('#menu',{
-        right:'0px',
-        duration:0.5,
-        stagger:0.3
-      })
-      }
-    },[toggle])
+
   return (
    <>
    <div className='w-full h-24 bg-transparent backdrop-blur-sm pt-4 flex md:justify-evenly justify-around items-center z-40 top-0 sticky'>
