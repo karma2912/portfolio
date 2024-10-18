@@ -32,7 +32,7 @@ const Navbar = (props) => {
         <NavLink className={(e)=>{return e.isActive?"hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white text-purple-400":`hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white ${text}`}} to='/about'>About Me</NavLink>
         <NavLink className={(e)=>{return e.isActive?"hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white text-purple-400":`hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white ${text}`}} to='/resume'>Resume</NavLink>
     </div>
-    <NavLink className='border-2 rounded-lg md:flex hidden bg-purple-400 border-purple-400 p-3 text-base font-semibold contact hover:scale-110 cursor-pointer' to="/contact">Contact me</NavLink>
+    <NavLink className='border-2 rounded-lg md:flex hidden bg-purple-400 border-purple-400 p-3 text-base font-semibold contact hover:scale-110 cursor-pointer text-black' to="/contact">Contact me</NavLink>
     <div className='md:hidden flex' onClick={handleToggle}><i className="fa-solid fa-bars"></i></div>
    </div>
    {toggle && <div className='h-[30rem] w-2/3 fixed top-10 -right-2/3 text-black bg-white bg-opacity-85 overflow-y-hidden menu z-50' id='menu' ref={menuRef}>

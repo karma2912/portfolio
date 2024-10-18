@@ -5,6 +5,7 @@ import Home from "../Home/Home";
 import Navbar from "../Navbar";
 import Works from "../Home/Works";
 import AboutHome from "../Home/AboutHome";
+import NewNavbar from "../NewNavbar";
 
 const Loader = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -82,7 +83,7 @@ const Loader = () => {
     <>
       <div
         ref={cursor}
-        className="flex justify-center items-center h-full w-full "
+        className="flex justify-center items-center h-full w-full fixed"
       >
         <div className="overflow-hidden absolute h-20 md:w-[42rem] w-full">
           <div className="md:text-[3rem] text-[1.7rem] font-light child flex justify-evenly items-center w-full">
@@ -99,9 +100,11 @@ const Loader = () => {
       </div>
       <div className="h-0 w-full bg-purple-400 absolute bottom-0 purple"></div>
       <div className="h-0 home absolute bottom-0 bg-black  overflow-x-hidden overflow-scroll gradient-bg">
-        <Navbar />
-        <Home />
-        <Works/>
+        {/* <Navbar /> */}
+        <NewNavbar/>
+        <Home/>
+        <Works text="text-black"/>
+        <AboutHome/>
       </div>
     </>
   );

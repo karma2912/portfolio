@@ -15,9 +15,9 @@ const Works = () => {
   }, []);
 
   return (
-    <div className='md:min-h-[100vh] min-h-[200vh] w-full bg-slate-50' >
+    <div className='md:min-h-[100vh] min-h-[200vh] w-full bg-slate-50 pb-20' >
       <div className='text-black md:h-[14vw] h-[35vw] flex justify-around items-end'>
-        <span className='md:text-[5vw] text-[10vw] yashs flex items-baseline'>View Project<p className='text-xl ml-2'>s</p></span>
+        <span className='md:text-[5vw] text-[10vw] yashs flex items-baseline'>View Project<p className='text-2xl ml-2'>s</p></span>
         <i className='fa-solid fa-arrow-down text-[6vw] rotate-45'></i>
       </div>
       <div className='md:min-h-[30vw] min-h-[100vw] h- flex md:flex-row flex-col justify-evenly md:items-end items-center mt-20'>
