@@ -12,6 +12,7 @@ import QuizPhotos from "./components/Services/Quiz/QuizPhotos";
 import NewsPhotos from "./components/Services/news/NewsPhotos";
 import NotesPhotos from "./components/Services/notes/NotesPhotos";
 import Loader from "./components/Loader/Loader";
+import NewNavbar from "./components/NewNavbar";
 
 function App() {
   const cursor = useRef(null);
@@ -47,7 +48,7 @@ function App() {
                 onMouseMove={handleMouseMove}
                 className="min-h-screen w-full bg-black gradient-bg text-white border-white"
               >
-                <Navbar text="text-white"/>
+                <NewNavbar text="text-white"/>
                 <Services/>
               </div>
             </>
@@ -61,7 +62,7 @@ function App() {
                 onMouseMove={handleMouseMove}
                 className="min-h-screen w-full bg-black gradient-bg text-black border-black"
               >
-                <Navbar text="text-black"/>
+                <NewNavbar text="text-black"/>
                 <About/>
               </div>
             </>
@@ -75,7 +76,7 @@ function App() {
                 onMouseMove={handleMouseMove}
                 className="min-h-screen w-full bg-black gradient-bg text-white border-white"
               >
-                <Navbar text="text-white"/>
+                <NewNavbar text="text-white"/>
                 <Contact/>
               </div>
             </>
@@ -89,7 +90,7 @@ function App() {
                 onMouseMove={handleMouseMove}
                 className="min-h-screen w-full bg-black gradient-bg text-white border-white"
               >
-                <Navbar text="text-white"/>
+                <NewNavbar text="text-white"/>
                 <Resume/>
               </div>
             </>
