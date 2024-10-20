@@ -49,7 +49,7 @@ const NewNavbar = () => {
             </div>
          </div>
       </div>
-      <div className='h-full w-[54%] text-white flex justify-start items-end pb-20 pl-20 second-half'>
+      <div className='h-full w-[54%] text-white  justify-start items-end pb-20 pl-20 md:flex hidden second-half'>
          <div className='h-[68vh] w-4/5 flex flex-col'>
          <div className='h-[60%] w-full border-b border-gray-600 flex'>
          <div className='h-full w-1/2 flex flex-col font-medium text-xl'>
