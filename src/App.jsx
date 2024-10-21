@@ -28,13 +28,12 @@ function App() {
   }, []);
   return (
     <>
-    
       <Routes>
         <Route
           path="/"
           element={
             <>
-            <div className="h-screen w-full bg-black text-white gradient-bg flex justify-center items-center" onMouseMove={handleMouseMove} >
+            <div className="h-screen w-full bg-black text-white gradient-bg flex justify-center items-center overflow-y-hidden" onMouseMove={handleMouseMove} >
               <Loader/>
             </div>
            </>

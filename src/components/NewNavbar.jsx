@@ -16,7 +16,7 @@ const NewNavbar = () => {
       });
       gsap.to('.screen', {
           backgroundColor: "black",
-          duration: 1,
+          duration: 0.2,
       });
       gsap.from('.second-half',{
         y:50,
@@ -55,7 +55,7 @@ const NewNavbar = () => {
          <div className='h-full w-1/2 flex flex-col font-medium text-xl'>
            <span className='mb-8'>Projects</span>
            <div className='flex flex-col font-medium text-base text-gray-500'>
-           <span className='mb-4 hover:text-white cursor-pointer '>Quiz Quest</span>
+           <span className='mb-4 hover:text-white cursor-pointer'>Quiz Quest</span>
            <span className='mb-4 hover:text-white cursor-pointer'>Personal Portfolio</span>
            <span className='mb-4 hover:text-white cursor-pointer'>YNotes</span>
            <span className='mb-4 hover:text-white cursor-pointer'>YNews</span>
@@ -66,9 +66,9 @@ const NewNavbar = () => {
          <div className='h-full w-1/2 flex flex-col font-medium text-xl'>
          <span className='mb-8'>Useful links</span>
            <div className='flex flex-col font-medium text-base text-gray-500'>
-           <span className='mb-4 hover:text-white cursor-pointer'>Twitter<i class="fa-brands fa-x-twitter ml-2"></i></span>
-           <span className='mb-4 hover:text-white cursor-pointer'>LinkedIn<i class="fa-brands fa-linkedin ml-2"></i></span>
-           <span className='mb-4 hover:text-white cursor-pointer'>GitHub<i class="fa-brands fa-github ml-2"></i></span>
+           <a className='mb-4 hover:text-white cursor-pointer' target='_blank' href='https://x.com/YashRaj45608052'>Twitter<i className="fa-brands fa-x-twitter ml-2"></i></a>
+           <a className='mb-4 hover:text-white cursor-pointer' href="https://www.linkedin.com/in/yash-rajak?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">LinkedIn<i className="fa-brands fa-linkedin ml-2"></i></a>
+           <a className='mb-4 hover:text-white cursor-pointer' href="https://github.com/karma2912" target="_blank">GitHub<i className="fa-brands fa-github ml-2"></i></a>
            </div>
          </div>
          </div>
@@ -76,7 +76,7 @@ const NewNavbar = () => {
          <div className='h-full w-1/2 flex flex-col justify-end font-medium text-xl'>
            <span className='mb-8'>Contact</span>
            <div className='flex flex-col font-medium text-base text-gray-500'>
-           <span className='mb-4 hover:text-white cursor-pointer'>LinkedIn<i class="fa-brands fa-linkedin ml-2"></i></span>
+           <span className='mb-4 hover:text-white cursor-pointer'>LinkedIn<i className="fa-brands fa-linkedin ml-2"></i></span>
            <span className='mb-4 hover:text-white cursor-pointer'>rajakyash23@gmail.com</span>
            <span className='mb-4 hover:text-white cursor-pointer'>+91 9561829120</span>
            </div>
@@ -84,9 +84,9 @@ const NewNavbar = () => {
          <div className='h-full w-1/2 flex flex-col justify-end font-medium text-xl'>
            <span className='mb-8'>India</span>
            <div className='flex flex-col font-medium text-base text-gray-500'>
-           <span className='mb-4 hover:text-white cursor-pointer'>Maharashtra</span>
-           <span className='mb-4 hover:text-white cursor-pointer'>Mumbai</span>
-           <span className='mb-4 hover:text-white cursor-pointer'>Vasai</span>
+           <span className='mb-4 '>Maharashtra</span>
+           <span className='mb-4 '>Mumbai</span>
+           <span className='mb-4 '>Vasai</span>
            </div>
          </div>
          </div>
