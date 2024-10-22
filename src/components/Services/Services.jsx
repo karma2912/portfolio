@@ -13,7 +13,8 @@ const Services = () => {
   },[])
   return (
     <>
-    <div className='min-h-screen w-full text-white mt-20'>
+    <div className='min-h-screen w-full text-white mt-10'>
+      <div className='md:ml-8 ml-6 text-7xl mb-14'>What I Did</div>
       <ServiceComponent img={quizpf} title="Quiz Quest" description="Quiz App is an app which auto updates the difficulty of questions,user can select easy,moderate,hard and ultimate level where the questions will be updated in only ultimate level." url='' to="/QuizPhotos"/>   
       <ServiceComponent img={news} title="YNews" description="YNews is news app which auto adds the recent news which appeared in any country,various sections are made like general,sports,business and many more to get those types of news only." url='' to="/NewsPhotos"/>   
       <ServiceComponent img={notes} title="YNotes" description="YNotes is an note saving app where a user can add a note with a title and description,the note can further be updated or deleted as per the user convenience." url='' to="/NotesPhotos"/>   
