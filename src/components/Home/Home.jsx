@@ -61,7 +61,7 @@ const Home = () => {
   return (
     <>
     <div className="min-h-screen w-full flex md:flex-row flex-col bg-black text-white bg-transparent" >
-      <div className="md:h-screen h-[80rem] md:w-1/2 w-full text-white flex flex-col justify-evenly items-center 2xl:pl-60 xl:pl-40 pl-10 md:pr-20 pr-10 ">
+      <div className="md:h-screen h-[80rem] md:w-1/2 w-full text-white flex flex-col justify-evenly items-center 2xl:pl-60 xl:pl-40 pl-10 md:pr-20 pr-5 ">
         <div className="min-h-1/2 text-start ">
         <div className="md:text-[6.7vw] text-8xl font-semibold">Hey,<span className="font-thin"> We
           
@@ -93,11 +93,11 @@ const Home = () => {
           </div>
           <div className="inner-info">
             <div className="text-lg">Client Served</div>
-            <div className="md:text-[1.7vw] text-5xl font-semibold">15 +</div>
+            <div className="md:text-[1.7vw] text-5xl font-semibold">15 + Clients</div>
           </div>
         </div>
       </div>
-      <div className="md:h-screen min-h-[35rem] md:w-1/2 w-full text-white flex md:flex-row flex-col md:justify-evenly justify-center items-center pr-30 pl-30 md:pb-16 pt-0">
+      <div className="md:h-screen min-h-[35rem] md:w-1/2 w-full text-white flex md:flex-row flex-col md:justify-evenly justify-around items-center pr-30 pl-30 md:pb-16 pt-0">
       <div className="md:h-[35rem] md:w-[35vw] image flex justify-center items-start" ><img src={yellowHex} className="md:h-[30rem] md:w-[30rem] image-inner"></img></div>
       <div className="flex md:flex-col flex-row justify-around md:h-52 h-fit text-lg md:w-fit w-full">
         <a className="fa-brands fa-github border border-black rounded-full bg-black p-3 text-center meta hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white" href="https://github.com/karma2912" target="_blank"></a>
