@@ -15,7 +15,7 @@ const Services = () => {
     <>
     <div className='min-h-screen w-full text-white mt-10 flex flex-col'>
       <div className=' text-7xl mb-14 w-full  text-center flex justify-around '>
-        <div>What I Did</div>
+        <div>What We Did</div>
         <div className='md:flex hidden'><i className='fa-solid fa-arrow-down text-[6vw] rotate-45'></i></div>
       </div>
       <ServiceComponent img={quizpf} title="Quiz Quest" description="Quiz App is an app which auto updates the difficulty of questions,user can select easy,moderate,hard and ultimate level where the questions will be updated in only ultimate level." url='' to="/QuizPhotos"/>   
