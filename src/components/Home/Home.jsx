@@ -61,17 +61,17 @@ const Home = () => {
   return (
     <>
     <div className="min-h-screen w-full flex md:flex-row flex-col bg-black text-white bg-transparent" >
-      <div className="md:h-screen h-[80rem] md:w-1/2 w-full text-white flex flex-col justify-evenly items-center 2xl:pl-60 xl:pl-40 pl-10 md:pr-20 pr-5 ">
+      <div className="md:h-screen h-[80rem] md:w-1/2 w-full text-white flex flex-col justify-evenly items-center 2xl:pl-60 xl:pl-40 pl-5 md:pr-20 pr-5 ">
         <div className="min-h-1/2 text-start ">
-        <div className="md:text-[6.7vw] text-8xl font-semibold">Hey,<span className="font-thin"> We
+        <div className="md:text-[6.5vw] text-[20vw] font-semibold ">Hey,<span className="font-thin"> We
           
            are</span> WebDevs</div>
-          <div className="pt-10 text-lg font-medium yash-inner text-gray-500">
+          <div className="pt-10 text-lg font-medium yash-inner md:text-left text-center text-gray-500">
             We are a team of Web developers & we are very passionate and dedicated to our work,
             We have the best devs with great skills and knowledge necessary to make your
             project a success.
           </div>
-          <div className="pt-14 flex items-center gap-9 text-lg font-medium">
+          <div className="pt-14 flex items-center md:justify-normal justify-center gap-9 text-lg font-medium">
             <Link className="border-2 text-base md:h-12 md:w-32 bg-purple-400 border-purple-400 p-4 rounded-xl hover:scale-110 about flex justify-center items-center" to='/about'>
             <div className="hover:text-lg">About Us</div>
             </Link>
@@ -83,15 +83,15 @@ const Home = () => {
           </div>
         </div>
         <div className="md:h-fit flex md:flex-row flex-col w-full justify-between h-[20rem] info ">
-          <div className="inner-info">
+          <div className="inner-info md:text-left text-center">
             <div className="md:text-lg text-xl">Placed in</div>
             <div className="md:text-[1.7vw] text-5xl font-semibold">Mumbai</div>
           </div>
-          <div className="inner-info">
+          <div className="inner-info md:text-left text-center">
             <div className="text-lg">Experience</div>
             <div className="md:text-[1.7vw] text-5xl font-semibold">4+ Years</div>
           </div>
-          <div className="inner-info">
+          <div className="inner-info md:text-left text-center">
             <div className="text-lg">Client Served</div>
             <div className="md:text-[1.7vw] text-5xl font-semibold">15 + Clients</div>
           </div>
