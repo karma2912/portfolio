@@ -60,20 +60,20 @@ const Home = () => {
   
   return (
     <>
-    <div className="min-h-screen w-full flex md:flex-row flex-col bg-black text-white bg-transparent" >
-      <div className="md:h-screen h-[80rem] md:w-1/2 w-full text-white flex flex-col justify-evenly items-center 2xl:pl-60 xl:pl-40 pl-5 md:pr-20 pr-5 ">
+    <div className="min-h-screen w-full flex md:flex-row flex-col bg-black text-white bg-transparent " >
+      <div className="md:h-screen h-[80rem] md:w-1/2 w-full relative -top-24 text-white flex flex-col justify-evenly items-center 2xl:pl-60 xl:pl-40 pl-5 md:pr-20 pr-5 ">
         <div className="min-h-1/2 text-start ">
-        <div className="md:text-[6.3vw] text-[20vw] font-semibold ">Hey,<span className="font-thin"> We
+        <div className="md:text-[6.3vw] text-[20vw] font-semibold ">Hey,<span className="font-thin"> I 
           
-           are</span> WebDevs</div>
+           am</span> Yash</div>
           <div className="pt-10 text-lg font-medium yash-inner text-left  text-gray-500">
-            We are a team of Web developers & we are very passionate and dedicated to our work,
-            We have the best devs with great skills and knowledge necessary to make your
+            I am Web developer a are very passionate and dedicated to my work,
+            I have the best ui and with great developing skills and knowledge necessary to make your
             project a success.
           </div>
           <div className="pt-14 flex items-center gap-9 text-lg font-medium">
             <Link className="border-2 text-base md:h-12 md:w-32 bg-purple-400 border-purple-400 p-4 rounded-xl hover:scale-110 about flex justify-center items-center" to='/about'>
-            <div className="hover:text-lg">About Us</div>
+            <div className="hover:text-lg">About Me</div>
             </Link>
             <div className="flex gap-3">
               <Link className="text-base hover:scale-125 cursor-pointer hover:shadow-2xl hover:shadow-white hover:text-lg work" to='/services'>
@@ -89,7 +89,7 @@ const Home = () => {
           </div>
           <div className="inner-info ">
             <div className="text-lg">Experience</div>
-            <div className="md:text-[1.7vw] text-5xl font-semibold">4+ Years</div>
+            <div className="md:text-[1.7vw] text-5xl font-semibold">1+ Years</div>
           </div>
           <div className="inner-info ">
             <div className="text-lg">Client Served</div>

@@ -23,7 +23,7 @@ const Works = () => {
         <i className='fa-solid fa-arrow-down text-[6vw] rotate-45'></i>
       </div>
       <div className='md:min-h-[30vw] min-h-[100vw] h- flex md:flex-row flex-col justify-evenly md:items-end items-center mt-20'>
-        <Link className='h-full md:pb-140' to="/QuizPhotos"><img src={quizpf} className='md:h-[25vw] h-[75vw] md:w-[22vw] rounded-[2vw] shadow-xl hover:shadow-2xl shadow-black cursor-pointer'></img></Link>
+        <Link className='h-full md:pb-14' to="/QuizPhotos"><img src={quizpf} className='md:h-[25vw] h-[75vw] md:w-[22vw] rounded-[2vw] shadow-xl hover:shadow-2xl shadow-black cursor-pointer'></img></Link>
         <Link className='h-full flex justify-center items-center' to="/NewsPhotos"><img src={news} className='md:h-[25vw] h-[75vw] md:w-[22vw] md:mt-0 mt-20 rounded-[2vw] shadow-xl hover:shadow-2xl shadow-black cursor-pointer'></img></Link>
       </div>
       <div className='md:min-h-[30vw] min-h-[100vw] flex md:flex-row flex-col justify-evenly md:items-start items-center md:mt-20 mt-[35vw] '>

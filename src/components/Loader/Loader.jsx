@@ -94,7 +94,7 @@ const Loader = () => {
         </div>
         <div className="h-16 w-0 bg-purple-400 block opacity-0 absolute">
           <div className="text-[3rem] relative opacity-0 yash font-normal">
-            Webyy.com
+            Yash.com
           </div>
         </div>
       </div>
