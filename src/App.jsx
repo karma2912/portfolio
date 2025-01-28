@@ -1,7 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 import "./App.css";
-import Navbar from "./components/Navbar";
-import gsap from "gsap";
 import { Route, Routes } from "react-router-dom";
 import Services from "./components/Services/Services";
 import About from "./components/About/About";

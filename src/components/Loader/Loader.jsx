@@ -2,7 +2,6 @@ import React from "react";
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import Home from "../Home/Home";
-import Navbar from "../Navbar";
 import Works from "../Home/Works";
 import AboutHome from "../Home/AboutHome";
 import NewNavbar from "../NewNavbar";

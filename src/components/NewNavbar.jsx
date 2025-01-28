@@ -45,7 +45,7 @@ const NewNavbar = () => {
             <NavLink className={(e)=>{return e.isActive?"text-orange-400 md:text-4xl text-3xl font-medium":`text-white md:text-4xl text-3xl font-medium`}} to="/" onClick={handleClick}>Homepage</NavLink>
             <NavLink className={(e)=>{return e.isActive?"text-orange-400 md:text-4xl text-3xl font-medium":`text-white md:text-4xl text-3xl font-medium`}} to="/services" onClick={handleClick}>Services</NavLink>
             <NavLink className={(e)=>{return e.isActive?"text-orange-400 md:text-4xl text-3xl font-medium":`text-white md:text-4xl text-3xl font-medium`}} to="/resume" onClick={handleClick}>Resume</NavLink>
-            <NavLink className={(e)=>{return e.isActive?"text-orange-400 md:text-4xl text-3xl font-medium":`text-white md:text-4xl text-3xl font-medium`}} to="/contact" onClick={handleClick}>Contact Us</NavLink>
+            <NavLink className={(e)=>{return e.isActive?"text-orange-400 md:text-4xl text-3xl font-medium":`text-white md:text-4xl text-3xl font-medium`}} to="/contact" onClick={handleClick}>Contact Me</NavLink>
             </div>
          </div>
       </div>

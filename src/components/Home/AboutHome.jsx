@@ -158,7 +158,7 @@ const AboutHome = () => {
               </div>
               <p className="md:pl-5 pl-0">Unique</p><p className="font-light md:pl-5 pl-2">Ideas</p>
             </div>
-            <div className="flex md:text-[4.5vw] text-[10vw] font-medium justify-center items-center md:flex-row flex-col "><div className="flex">For Your<p className="font-light pl-5">Business.</p></div><button className="md:h-20 h-16 md:w-[12vw] w-[60vw] bg-purple-400 hover:bg-purple-500 rounded-[10vw] md:text-[0.7vw] text-[3vw] md:ml-8 ml-0 flex justify-center items-center md:mt-0 mt-10 text-black">WHAT WE DO<i className="fa-solid fa-arrow-right ml-5 md:text-3xl text-xl text-black"></i></button></div>
+            <div className="flex md:text-[4.5vw] text-[10vw] font-medium justify-center items-center md:flex-row flex-col "><div className="flex">For Your<p className="font-light pl-5">Business.</p></div><button className="md:h-20 h-16 md:w-[12vw] w-[60vw] bg-purple-400 hover:bg-purple-500 rounded-[10vw] md:text-[0.7vw] text-[3vw] md:ml-8 ml-0 flex justify-center items-center md:mt-0 mt-10 text-black">WHAT I DO<i className="fa-solid fa-arrow-right ml-5 md:text-3xl text-xl text-black"></i></button></div>
           </div>
           <div className="md:h-1/2 h-full md:w-2/3 w-full flex justify-center items-center md:flex-row flex-col md:mt-0 mt-16">
           <div className="h-full md:w-1/4 w-11/12 border-l-[0.1vw] border-gray-700 border-t-[0.1vw]  md:border-r-0 border-r-[0.1vw]" onMouseEnter={mouseEnterbrand} onMouseLeave={mouseLeavebrand}>
