@@ -11,6 +11,7 @@ import NewsPhotos from "./components/Services/news/NewsPhotos";
 import NotesPhotos from "./components/Services/notes/NotesPhotos";
 import Loader from "./components/Loader/Loader";
 import NewNavbar from "./components/NewNavbar";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const cursor = useRef(null);
@@ -47,6 +48,7 @@ function App() {
               >
                 <NewNavbar text="text-white"/>
                 <Services/>
+                <Footer/>
               </div>
             </>
           }
@@ -61,6 +63,7 @@ function App() {
               >
                 <NewNavbar text="text-black"/>
                 <About/>
+                <Footer/>
               </div>
             </>
           }
@@ -75,6 +78,7 @@ function App() {
               >
                 <NewNavbar text="text-white"/>
                 <Contact/>
+                <Footer/>
               </div>
             </>
           }
@@ -89,6 +93,7 @@ function App() {
               >
                 <NewNavbar text="text-white"/>
                 <Resume/>
+                <Footer/>
               </div>
             </>
           }
@@ -102,7 +107,7 @@ function App() {
                 className="min-h-screen w-full bg-black gradient-bg text-white border-white"
               >
                 <QuizPhotos/>
-                
+                <Footer/>
               </div>
             </>
           }
@@ -116,7 +121,7 @@ function App() {
                 className="min-h-screen w-full bg-black gradient-bg text-white border-white"
               >
                 <NewsPhotos/>
-                
+                <Footer/>
               </div>
             </>
           }
@@ -130,7 +135,7 @@ function App() {
                 className="min-h-screen w-full bg-black gradient-bg text-white border-white"
               >
                 <NotesPhotos/>
-                
+                <Footer/>
               </div>
             </>
           }

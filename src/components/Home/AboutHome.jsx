@@ -143,6 +143,7 @@ const AboutHome = () => {
      })
   }
   return (
+    <>
     <div className="md:h-[97vh] h-[250vh] bg-black flex justify-center items-center ">
       <div className="h-full w-full flex flex-col justify-between items-center">
         <div className="h-48 md:w-[40vw] w-11/12 flex md:justify-end justify-center items-end text-gray-500 font-medium md:text-right text-center mb-14">
@@ -205,6 +206,7 @@ const AboutHome = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
