@@ -6,12 +6,13 @@ const Resume = () => {
     window.scrollTo(0, 0);
   },[])
   return (
-    <>
-    <div className='h-screen flex justify-center items-center'>
-        <img src={yr} className='md:h-screen h-[40rem]'></img>
+    <div className="md:-mt-24 flex justify-center items-center h-screen">
+      <iframe
+        src='/Yash-Resume-ATS.pdf'
+        className="md:h-[53rem] h-full md:w-[42rem] w-full border shadow-lg rounded-lg"
+      ></iframe>
     </div>
-    </>
-  )
-}
+  );
+};
 
 export default Resume

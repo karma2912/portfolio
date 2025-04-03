@@ -5,6 +5,7 @@ import Home from "../Home/Home";
 import Works from "../Home/Works";
 import AboutHome from "../Home/AboutHome";
 import NewNavbar from "../NewNavbar";
+import { Box } from "@chakra-ui/react";
 
 const Loader = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -60,6 +61,7 @@ const Loader = () => {
       opacity: 1,
       delay: -0.5,
       x: -100,
+      zIndex: 10, // Ensure it's on top
     });
     tl.to(".purple", {
       height: "100%",
@@ -92,8 +94,10 @@ const Loader = () => {
           </div>
         </div>
         <div className="h-16 w-0 bg-purple-400 block opacity-0 absolute">
-          <div className="text-[3rem] relative opacity-0 yash font-normal">
-            Yash.com
+          <div className="text-[3rem] relative opacity-0 yash font-normal" style={{ zIndex: 10 }}>
+          <Box className="yash" whiteSpace="nowrap">
+  Yash.com
+</Box>
           </div>
         </div>
       </div>
