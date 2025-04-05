@@ -60,8 +60,8 @@ const Loader = () => {
     tl.to(".yash", {
       opacity: 1,
       delay: -0.5,
-      x: -100,
-      zIndex: 10, // Ensure it's on top
+      zIndex: 10,
+      x: 0, // Changed from -100 to 0 to keep it centered
     });
     tl.to(".purple", {
       height: "100%",
@@ -93,17 +93,16 @@ const Loader = () => {
             <span className="stag-child">Excellence</span>
           </div>
         </div>
-        <div className="h-16 w-0 bg-purple-400 block opacity-0 absolute">
+        <div className="h-16 w-0 bg-purple-400 block opacity-0 absolute flex justify-center items-center"> {/* Added flex centering */}
           <div className="text-[3rem] relative opacity-0 yash font-normal" style={{ zIndex: 10 }}>
-          <Box className="yash" whiteSpace="nowrap">
-  Yash.com
-</Box>
+            <Box className="yash" whiteSpace="nowrap">
+              Yash.com
+            </Box>
           </div>
         </div>
       </div>
       <div className="h-0 w-full bg-purple-400 absolute bottom-0 purple"></div>
       <div className="h-0 home absolute bottom-0 bg-black  overflow-x-hidden overflow-scroll gradient-bg">
-        {/* <Navbar /> */}
         <NewNavbar/>
         <Home/>
         <Works text="text-black"/>
