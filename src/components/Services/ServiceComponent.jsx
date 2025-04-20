@@ -1,6 +1,4 @@
 import React from 'react'
-import QuizPhotos from './Quiz/QuizPhotos'
-import { useNavigate } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 const ServiceComponent = (props) => {
     const {img ,title ,description,url,to} = props

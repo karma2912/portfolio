@@ -14,7 +14,8 @@ const SkillsSection = () => {
         { name: 'E-commerce Dashboard', link: '#' },
         { name: 'Portfolio Website', link: '#' }
       ],
-      specialFeatures: ['Hooks', 'Context API', 'React Router']
+      specialFeatures: ['Hooks', 'Context API', 'React Router'],
+      color: "blue-400"
     },
     {
       name: 'Node.js',
@@ -24,7 +25,8 @@ const SkillsSection = () => {
         { name: 'REST API Service', link: '#' },
         { name: 'Real-time Chat App', link: '#' }
       ],
-      specialFeatures: ['Event Loop', 'Streams', 'Cluster Module']
+      specialFeatures: ['Event Loop', 'Streams', 'Cluster Module'],
+      color:"green-400"
     },
     {
       name: 'MongoDB',
@@ -34,7 +36,8 @@ const SkillsSection = () => {
         { name: 'User Management System', link: '#' },
         { name: 'Analytics Dashboard', link: '#' }
       ],
-      specialFeatures: ['Aggregation', 'Indexing', 'Transactions']
+      specialFeatures: ['Aggregation', 'Indexing', 'Transactions'],
+      color:"green-500"
     },
     {
         name: 'GSAP',
@@ -44,7 +47,8 @@ const SkillsSection = () => {
           { name: 'Animated Portfolio Loader', link: '#' },
           { name: 'Hero Section Animations', link: '#' }
         ],
-        specialFeatures: ['Timelines', 'ScrollTrigger', 'Ease Functions']
+        specialFeatures: ['Timelines', 'ScrollTrigger', 'Ease Functions'],
+        color:"violet-500"
       },      
     {
       name: 'WebRTC',
@@ -54,7 +58,8 @@ const SkillsSection = () => {
         { name: 'Video Chat App', link: '#' },
         { name: 'Screen Sharing Tool', link: '#' }
       ],
-      specialFeatures: ['Peer Connections', 'Media Streams', 'Data Channels']
+      specialFeatures: ['Peer Connections', 'Media Streams', 'Data Channels'],
+      color:"red-500"
     },
     {
       name: 'Socket.io',
@@ -64,15 +69,16 @@ const SkillsSection = () => {
         { name: 'Live Collaboration Tool', link: '#' },
         { name: 'Multiplayer Game', link: '#' }
       ],
-      specialFeatures: ['Rooms', 'Namespaces', 'Broadcasting']
+      specialFeatures: ['Rooms', 'Namespaces', 'Broadcasting'],
+      color:"white"
     }
   ];
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-12">
-      <h2 className="md:text-7xl text-4xl font-bold text-white mt-12 mb-24 text-center">My Development Skills</h2>
+    <div className="w-full mx-auto px-4 py-12 bg-white">
+       <span className='md:text-[5vw] text-[10vw] yashs text-black flex items-baseline'>My Development Skill<p className='text-2xl ml-2'>s</p></span>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="max-w-7xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {skills.map((skill, index) => (
           <SkillCard key={index} skill={skill} />
         ))}

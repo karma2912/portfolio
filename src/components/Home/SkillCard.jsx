@@ -2,12 +2,12 @@ import React from 'react';
 
 const SkillCard = ({ skill }) => {
   return (
-    <div className="bg-black border border-black rounded-lg p-6 shadow-white shadow-md hover:shadow-white hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+    <div className="bg-black border border-black rounded-lg p-6 shadow-purple-400 shadow-md hover:shadow-purple-400 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
       <div className="flex items-center mb-4">
         <div className="p-3 rounded-full bg-gray-700 mr-4">
           <skill.icon className="h-8 w-8 text-purple-400" />
         </div>
-        <h3 className="text-2xl font-bold text-white">{skill.name}</h3>
+        <h3 className={`text-2xl font-bold text-${skill.color}`}>{skill.name}</h3>
       </div>
       
       <p className="text-gray-300 opacity-50 text-lg mb-4">{skill.description}</p>
@@ -38,7 +38,7 @@ const SkillCard = ({ skill }) => {
             {skill.specialFeatures.map((feature, index) => (
               <span 
                 key={index} 
-                className="px-3 py-1 bg-gray-700 text-purple-400  rounded-full text-lg"
+                className="px-3 py-1 bg-gray-700 text-purple-400 rounded-full text-lg"
               >
                 {feature}
               </span>

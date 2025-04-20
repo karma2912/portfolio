@@ -8,6 +8,7 @@ import NewNavbar from "../NewNavbar";
 import { Box } from "@chakra-ui/react";
 import Footer from "../Footer/Footer";
 import SkillsSection from "../Home/SkillsSection";
+import Skills from "../Home/Skills";
 
 const Loader = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -107,7 +108,7 @@ const Loader = () => {
         <Home/>
         <Works text="text-black"/>
         <AboutHome/>
-        <SkillsSection/>
+        <Skills/>
         <Footer/>
       </div>
     </>

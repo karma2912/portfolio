@@ -1,20 +1,15 @@
 import React, { useEffect } from 'react';
-import img from './leftDown.png';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import quizpf from './quizpf.webp'
 import news from './news.jpg'
 import notes from './notes.jpg'
 import password from './password.jpg'
-import QuizPhotos from '../Services/Quiz/QuizPhotos';
 import { Link } from 'react-router-dom';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Works = () => {
-  useEffect(() => {
-    
-  }, []);
 
   return (
     <div className='md:min-h-[100vh] min-h-[200vh] w-full bg-slate-50 pb-20' >
