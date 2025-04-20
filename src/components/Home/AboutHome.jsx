@@ -147,7 +147,7 @@ const AboutHome = () => {
     <div className="md:h-[97vh] h-[250vh] bg-black flex justify-center items-center ">
       <div className="h-full w-full flex flex-col justify-between items-center">
         <div className="h-48 md:w-[40vw] w-11/12 flex md:justify-end justify-center items-end text-gray-500 font-medium md:text-right text-center mb-14">
-          Professionals focuesd on helping your brand
+          Professionals focused on helping your brand
           <br />
           grow and move forward
         </div>
@@ -167,7 +167,7 @@ const AboutHome = () => {
           <div className="h-full w-full flex flex-col justify-evenly items-center">
             <div className="md:text-[1.2vw] text-[4.5vw] md:w-[10vw] w-full text-left md:ml-0 ml-16 font-medium items-start">Branding and Identity Design</div>
             <div className="h-1/2 md:w-[13vw] w-full flex flex-col justify-around items-start">
-              <div className="md:text-[0.8vw] text-[4vw] md:w-[12vw] w-full items-start md:ml-0 ml-8 opacity-0 brand text-gray-500">Our creative agency is team of Professionals foucsed on helping your brand grow</div>
+              <div className="md:text-[0.8vw] text-[4vw] md:w-[12vw] w-full items-start md:ml-0 ml-8 opacity-0 brand text-gray-500">Our creative agency is team of Professionals focused on helping your brand grow</div>
               <button className="md:w-[12vw] w-full flex justify-start ml-3 "><i className="fa-solid fa-arrow-right md:text-[0.5vw] text-[2.3vw] md:pt-0 pt-[0.3vw] bicon text-center text-black border h-3 w-3 border-gray-500 bg-gray-500 rounded-full md:ml-0 ml-8"></i></button>
             </div>
             </div>
@@ -177,7 +177,7 @@ const AboutHome = () => {
           <div className="h-full w-full flex flex-col justify-evenly items-center">
           <div className="md:text-[1.2vw] text-[4.5vw] md:w-[10vw] w-full text-left md:ml-0 ml-16 font-medium items-start">Website Design <br/>and Development</div>
             <div className="h-1/2 md:w-[13vw] w-full flex flex-col justify-around items-start">
-              <div className="md:text-[0.8vw] text-[4vw] md:w-[12vw] w-full items-start md:ml-0 ml-8 opacity-0 second text-gray-500">Our creative agency is team of Professionals foucsed on helping your brand grow</div>
+              <div className="md:text-[0.8vw] text-[4vw] md:w-[12vw] w-full items-start md:ml-0 ml-8 opacity-0 second text-gray-500">Our creative agency is team of Professionals focused on helping your brand grow</div>
               <button className="md:w-[12vw] w-full flex justify-start ml-3 "><i className="fa-solid fa-arrow-right md:text-[0.5vw] text-[2.3vw] md:pt-0 pt-[0.3vw] sicon text-center text-black border h-3 w-3 border-gray-500 bg-gray-500 rounded-full md:ml-0 ml-8"></i></button>
             </div>
             </div>
@@ -187,7 +187,7 @@ const AboutHome = () => {
           <div className="h-full w-full flex flex-col justify-evenly items-center">
           <div className="md:text-[1.2vw] text-[4.5vw] md:w-[12vw] w-full text-left md:ml-0 ml-16 font-medium items-start">Advertising and <br/>Marketing Campaigns</div>
             <div className="h-1/2 md:w-[13vw] w-full flex flex-col justify-around items-start">
-              <div className="md:text-[0.8vw] text-[4vw] md:w-[12vw] w-full items-start md:ml-0 ml-8 opacity-0 third text-gray-500">Our creative agency is team of Professionals foucsed on helping your brand grow</div>
+              <div className="md:text-[0.8vw] text-[4vw] md:w-[12vw] w-full items-start md:ml-0 ml-8 opacity-0 third text-gray-500">Our creative agency is team of Professionals focused on helping your brand grow</div>
               <button className="md:w-[12vw] w-full flex justify-start ml-3 "><i className="fa-solid fa-arrow-right md:text-[0.5vw] text-[2.3vw] md:pt-0 pt-[0.3vw] ticon text-center text-black border h-3 w-3 border-gray-500 bg-gray-500 rounded-full md:ml-0 ml-8"></i></button>
             </div>
             </div>
@@ -197,7 +197,7 @@ const AboutHome = () => {
           <div className="h-full w-full flex flex-col justify-evenly items-center">
           <div className="md:text-[1.2vw] text-[4.5vw] md:w-[12vw] w-full text-left md:ml-0 ml-16 font-medium items-start">Creative Consulting<br/>and Development</div>
             <div className="h-1/2 md:w-[13vw] w-full flex flex-col justify-around items-start">
-              <div className="md:text-[0.8vw] text-[4vw] md:w-[12vw] w-full items-start md:ml-0 ml-8 opacity-0 fourth text-gray-500">Our creative agency is team of Professionals foucsed on helping your brand grow</div>
+              <div className="md:text-[0.8vw] text-[4vw] md:w-[12vw] w-full items-start md:ml-0 ml-8 opacity-0 fourth text-gray-500">Our creative agency is team of Professionals focused on helping your brand grow</div>
               <button className="md:w-[12vw] w-full flex justify-start ml-3 "><i className="fa-solid fa-arrow-right md:text-[0.5vw] text-[2.3vw] md:pt-0 pt-[0.3vw] ficon text-center text-black border h-3 w-3 border-gray-500 bg-gray-500 rounded-full md:ml-0 ml-8"></i></button> 
             </div>
             </div>

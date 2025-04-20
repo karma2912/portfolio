@@ -6,6 +6,7 @@ import Works from "../Home/Works";
 import AboutHome from "../Home/AboutHome";
 import NewNavbar from "../NewNavbar";
 import { Box } from "@chakra-ui/react";
+import Footer from "../Footer/Footer";
 
 const Loader = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -41,19 +42,19 @@ const Loader = () => {
       y: -300,
     });
 
-    tl.to(".block", {
+    tl.to(".karma", {
       opacity: 1,
       delay: -1,
       width: "300px",
       duration: 0.5,
     });
-    tl.from(".block", {
+    tl.from(".karma", {
       x: 200,
       delay: -3,
       ease: "bounce.out",
       duration: 0.5,
     });
-    tl.to(".block", {
+    tl.to(".karma", {
       width: 0,
       duration: 0.5,
     });
@@ -61,7 +62,7 @@ const Loader = () => {
       opacity: 1,
       delay: -0.5,
       zIndex: 10,
-      x: 0, // Changed from -100 to 0 to keep it centered
+      x: 0,
     });
     tl.to(".purple", {
       height: "100%",
@@ -93,10 +94,10 @@ const Loader = () => {
             <span className="stag-child">Excellence</span>
           </div>
         </div>
-        <div className="h-16 w-0 bg-purple-400 block opacity-0 absolute flex justify-center items-center"> {/* Added flex centering */}
+        <div className="h-16 w-0 bg-purple-400 opacity-0 absolute flex justify-center items-center karma">
           <div className="text-[3rem] relative opacity-0 yash font-normal" style={{ zIndex: 10 }}>
             <Box className="yash" whiteSpace="nowrap">
-              Yash.com
+              Yash Develops
             </Box>
           </div>
         </div>
@@ -107,6 +108,7 @@ const Loader = () => {
         <Home/>
         <Works text="text-black"/>
         <AboutHome/>
+        <Footer/>
       </div>
     </>
   );

@@ -77,8 +77,8 @@ const NewNavbar = () => {
            <span className='mb-8'>Contact</span>
            <div className='flex flex-col font-medium text-base text-gray-500'>
            <span className='mb-4 hover:text-white cursor-pointer'>LinkedIn<i className="fa-brands fa-linkedin ml-2"></i></span>
-           <span className='mb-4 hover:text-white cursor-pointer'>xyz@gmail.com</span>
-           <span className='mb-4 hover:text-white cursor-pointer'>+91 123456789</span>
+           <span className='mb-4 hover:text-white cursor-pointer'>rajakyash23@gmail.com</span>
+           <span className='mb-4 hover:text-white cursor-pointer'>+91 9561829120</span>
            </div>
          </div>
          <div className='h-full w-1/2 flex flex-col justify-end font-medium text-xl'>
