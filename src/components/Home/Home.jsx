@@ -4,8 +4,6 @@ import yellowHex from './yash.png'
 import './Home.css'
 import gsap from "gsap";
 import ScrollTrigger from 'gsap/ScrollTrigger';
-import { QrCode } from "@chakra-ui/react"
-import Footer from "../Footer/Footer";
 gsap.registerPlugin(ScrollTrigger);
 const Home = () => {
   useEffect(()=>{

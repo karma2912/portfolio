@@ -7,6 +7,7 @@ import AboutHome from "../Home/AboutHome";
 import NewNavbar from "../NewNavbar";
 import { Box } from "@chakra-ui/react";
 import Footer from "../Footer/Footer";
+import SkillsSection from "../Home/SkillsSection";
 
 const Loader = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -95,10 +96,8 @@ const Loader = () => {
           </div>
         </div>
         <div className="h-16 w-0 bg-purple-400 opacity-0 absolute flex justify-center items-center karma">
-          <div className="text-[3rem] relative opacity-0 yash font-normal" style={{ zIndex: 10 }}>
-            <Box className="yash" whiteSpace="nowrap">
-              Yash Develops
-            </Box>
+        <div className="text-[3rem] relative opacity-0 yash yash-text font-normal whitespace-nowrap" style={{ zIndex: 10 }}>
+            Yash Develops
           </div>
         </div>
       </div>
@@ -108,6 +107,7 @@ const Loader = () => {
         <Home/>
         <Works text="text-black"/>
         <AboutHome/>
+        <SkillsSection/>
         <Footer/>
       </div>
     </>
